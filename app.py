@@ -6,14 +6,12 @@ from sqlalchemy.orm import relationship
 from flask_marshmallow import Marshmallow
 from flask_cors import CORS
 import datetime
-import jwt
 import sqlite3
 from functools import wraps
 import uuid
 from flask_restful import Resource,Api,fields
 from flask import Flask, make_response,request,jsonify, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
-from flask_jwt_extended import  JWTManager, jwt_required, create_access_token
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_swagger_ui import get_swaggerui_blueprint
 from flask import request,Blueprint
